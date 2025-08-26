@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="/css&js/css/bootstrap.css">
+    <script src="/css&js/js/bootstrap.bundle.js"></script>
+    
+</head>
+<body>
+    <!-- header -->
+    <header class="bg-success py-5">
+        <h1 class="py-3 text-center">Struktur Dasar HTML dan Belajar Bootstrap</h1>
+    </header>
+    <!-- section -->
+     <section>
+        <p class="pt-3">Struktur dasar HTML adalah</p>
+        <ol class="">
+            <li class="alert alert-primary text-warning-emphasis">Tag DOCTYPE</li>
+            <p> Doctype adalah tipe dari htmlnya </p>
+            <li class="alert alert-danger">Tag html</li>
+            <p> Menandakan bahwa dokumen ini adalah berbentuk html</p>
+            <li class="alert alert-dark">Tag Head</li>
+            <p>Head adalah bagian html yang bertugas mengaitkan link-link dari luar</p>
+            <li class="alert alert-light text-bg-danger">Tag body</li>
+            <p>Body adalah bagian yang menjadi wadah untuk ditampilkan di website</p>
+        </ol>
+     </section>
+
+     <!-- container adalah element layout yang paling dasar, kita harus menggunakan elemen container ini jika ingin menggunakan grid di bootstrap, bisa dikatakan dengan wadah -->
+     <section>
+        <div class="container">
+            <div class="bg-warning p-3 text-success text-center">Container pertama</div>
+            <div class="container bg-primary p-5 text-black-600 text-center">Container 2</div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="bg-dark text-light">Container-fluid</div>
+            <div class="bg-light">ukuran lebar memiliki layout penuh</div>
+        </div>
+
+        <div class="container-sm bg-primary">saya</div>
+        <div class="container-xl bg-danger">belajar</div>
+        <div class="container-md bg-success">container</div>
+        <div class="container-lg bg-warning">dan</div>
+        <div class="container-xxl bg-info">grid</div>
+     </section>
+
+     <!-- Grid adalah sistem yang mengatur lebar masing-masing elemen, dengan tujuan mengatur responsif dari device nantinya, grid/kolom ini nisa kita atur sesuai device -->
+
+    <!-- ada 12 grid di boostrap -->
+
+    <!-- jenis grid system
+    .col-*
+    .col-sm-*
+    .col-lg-*
+    Nah jadi bintang itu mengatur 12 itu hanya dari 1-12, sm/lg mengatur grid pada layar 
+
+    **Wajib pake class="row"
+     -->
+
+    <!-- grid -->
+    <section>
+        <h1 class="mt-5">Container-Fluid Without Row</h1>
+        <div class="container-fluid bg-info">
+            <div class="">
+                <div class="col-md-12">
+                    <div class="bg-primary text-white text-center my-5 py-2">.col-md-12</div>
+                </div>
+
+                <div class="col-md-10">
+                    <div class="bg-primary text-white text-center my-5 py-2">.col-md-10</div>
+                </div>
+                
+                <div class="col-md-8">
+                    <div class="bg-primary text-white text-center my-5 py-2">.col-md-8</div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="bg-primary text-white text-center my-5 py-2">.col-md-6</div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="bg-primary text-white text-center my-5 py-2">.col-md-4</div>
+                </div>
+
+                 <div class="col-md-2">
+                    <div class="bg-primary text-white text-center my-5 py-2">.col-md-2</div>
+                </div>
+
+                <div class="col-md-10">
+                    <div class="bg-primary text-white text-center my-5 py-2">.col-md-10</div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="bg-primary text-white text-center my-5 py-2">.col-md-2</div>
+                </div>
+            </div>
+        </div>  
+                
+
+        <!-- container-xxl -->
+        <h1>Container-xxl column widht </h1>
+            <div class="container-xxl row my-5 bg-success">
+                <div class="col-md-6">
+                    <div class="bg-primary text-white text-center my-5 py-5">.col-md-6</div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="bg-primary text-white text-center my-5 py-5">.col-md-6</div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="bg-primary text-white text-center my-5 py-5">.col-md-4</div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="bg-primary text-white text-center my-5 py-5">.col-md-5</div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="bg-primary text-white text-center p-5 my-5">.col-md-3</div>
+                </div>
+            </div>
+
+            <!-- container-lg responsive -->
+            <h1>Container-lg responsive</h1>
+             <div class="container-md my-5 bg-warning">
+                <div class="row">
+                    <div class="col-sm-4 col-lg-6">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-6</div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-6">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-6</div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-12">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-12</div>
+                    </div>
+
+                    <div class="col-sm-5 col-lg-10">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-10</div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-2">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-2</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                
+        <!-- container justifying column -->
+            <h1>Container-xl justifying column </h1>
+            <div class="container-xl my-5 bg-warning">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-lg-3">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-3</div>
+                    </div>
+
+                    <div class=" col-lg-3">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-3</div>
+                    </div>
+            
+                    <div class=" col-lg-3">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-3</div>
+                    </div>
+
+                    <div class=" col-lg-3">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-3</div>
+                    </div>
+
+                    <div class=" col-lg-3">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-3</div>
+                    </div>
+
+                    <div class=" col-lg-3">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-3</div>
+                    </div>
+                    
+                </div>
+            </div>     
+
+             <div class="container-xl my-5 bg-warning">
+                <div class="row justify-content-start">
+                    <div class="col-sm-4 col-lg-3">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-3</div>
+                    </div>
+
+                    <div class=" col-lg-3">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-3</div>
+                    </div>
+            
+                    <div class=" col-lg-3">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-3</div>
+                    </div>
+
+                    <div class=" col-lg-3">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-3</div>
+                    </div>
+
+                    <div class=" col-lg-3">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-3</div>
+                    </div>
+
+                    <div class=" col-lg-3">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-3</div>
+                    </div>
+                    
+                </div>
+            </div>     
+
+             <div class="container-xl my-5 bg-warning">
+                <div class="row justify-content-end">
+                    <div class="col-sm-4 col-lg-3">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-3</div>
+                    </div>
+
+                    <div class=" col-lg-3">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-3</div>
+                    </div>
+            
+                    <div class=" col-lg-3">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-3</div>
+                    </div>
+
+                    <div class=" col-lg-3">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-3</div>
+                    </div>
+
+                    <div class=" col-lg-3">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-3</div>
+                    </div>
+
+                    <div class=" col-lg-3">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-3</div>
+                    </div>
+                    
+                </div>
+            </div>     
+
+             <div class="container-xl my-5 bg-warning">
+                <div class="row justify-content-between">
+                    <div class="col-sm-4 col-lg-3">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-3</div>
+                    </div>
+
+                    <div class=" col-lg-3">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-3</div>
+                    </div>
+
+                    </div>             
+                </div>
+            </div>     
+
+             <div class="container-xl my-5 bg-warning">
+                <div class="row justify-content-around">
+                    <div class="col-sm-4 col-lg-3">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-3</div>
+                    </div>
+
+                    <div class=" col-lg-3">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-3</div>
+                    </div>
+
+                    </div>             
+                </div>
+            </div>  
+
+             <div class="container-xl my-5 bg-warning">
+                <div class="row justify-content-start">
+                    <div class="col-sm-4 col-lg-3">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-3</div>
+                    </div>
+
+                    <div class=" col-lg-3">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-3</div>
+                    </div>
+
+                    </div>             
+                </div>
+            </div>     
+
+             <div class="container-xl my-5 bg-warning">
+                <div class="row justify-content-end">
+                    <div class="col-sm-4 col-lg-3">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-3</div>
+                    </div>
+
+                    <div class=" col-lg-3">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-3</div>
+                    </div>
+
+                    </div>             
+                </div>
+            </div>     
+
+             <div class="container-xl my-5 bg-warning">
+                <div class="row justify-content-evenly">
+                    <div class="col-sm-4 col-lg-3">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-3</div>
+                    </div>
+
+                    <div class=" col-lg-3">
+                        <div class="bg-primary text-white text-center my-2 py-5">col-md-3</div>
+                    </div>
+
+                    </div>             
+                </div>
+            </div>    
+
+    <!-- footer -->
+     <footer class="bg-danger py-3">
+        <h1 class="text-center fs-5">Jadi batas lebar suatu grid adalah 12, jika lebih dari 12 maka grid akan turun ke bawah, pada dasarnya seperti itu tapi nanti bisa diatur menggunakan css jika ingin membuat satu grid lebar yang hanya col-md-6 bisa dalam satu lebar device </h1>
+     </footer>
+</body>
+</html>
